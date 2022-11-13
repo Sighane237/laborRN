@@ -1,42 +1,42 @@
 
 public  class Student {
  
-	private int Matrikelnummer;
-	private String Nachname;
-	private String Vorname;
-	private Double  Note;
+	private int matrikelNummer;
+	private String nachName;
+	private String VorName;
+	private Double note;
 	
-	public Student(int Matrikelnummer,String Nachname,String Vorname, double Note) {
+	public Student(int matrikelNummer,String nachName,String VorName, double Note) {
 		
-		this.Matrikelnummer = Matrikelnummer ;
-		this.Nachname = Nachname;
-		this.Vorname = Vorname;
-		this.Note = Note;
+		this.matrikelNummer = matrikelNummer;
+		this.nachName = nachName;
+		this.VorName = VorName;
+		this.note = Note;
 	
 	}
 	
-	public int gibMatrikelnummer() {
+	public int getMatrikelNummer() {
 		
 		
-		return Matrikelnummer;
+		return matrikelNummer;
 	}
 
-	public String gibNachname() {
+	public String getNachName() {
 		
 		
-		return Nachname;
+		return nachName;
 	}
 	
-	public String gibVorname() {
+	public String getVorName() {
 		
 		
-		return Vorname;
+		return VorName;
 	}
 	
-	public Double gibNote() {
+	public double getNote() {
 		
 		
-		return Note;
+		return note;
 	}
 		
 	@Override
@@ -44,10 +44,13 @@ public  class Student {
 	public String toString() {
 		
 		
-		return + Matrikelnummer + Nachname + Vorname + Note + "\n" ; 
+		return +matrikelNummer + nachName + VorName + note + "\n" ;
 		
 		
 	}
+
+
+
 	
 
 	/*public int  compareTo(Student o) {
